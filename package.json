@@ -1,0 +1,50 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/*.spec.+(ts|tsx|js)",
+      "**/__tests__/lib/*.spec.+(ts|tsx|js)"
+    ]
+  },
+  "author": "Chikara Yoshimura",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "json-editor": "^0.7.28",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^4.3.1",
+    "@types/jest": "^24.0.25",
+    "@types/json-editor": "0.0.5",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "copy-webpack-plugin": "^5.1.1",
+    "jest": "^24.9.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
